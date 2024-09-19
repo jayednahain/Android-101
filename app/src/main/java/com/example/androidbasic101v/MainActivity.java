@@ -29,28 +29,14 @@ public class MainActivity extends AppCompatActivity {
     public void onPressImage(View view){
         Log.i("info", "image tapped");
         ImageView imageViewOne = (ImageView) findViewById(R.id.imageView2);
-        ImageView imageViewTwo = (ImageView) findViewById(R.id.imageView3);
-
-        if(imageOneShowing){
-            imageOneShowing =false;
-            Log.i("info", " 0 - 1 :"+ imageOneShowing );
-            imageViewOne.animate().alpha(0).setDuration(2000);
-            imageViewTwo.animate().alpha(1).setDuration(2000);
-        }
-        else {
-
-            imageOneShowing =true;
-            Log.i("info", " 1 - 0: "+imageOneShowing );
-            imageViewOne.animate().alpha(1).setDuration(2000);
-            imageViewTwo.animate().alpha(0).setDuration(2000);
-
-        }
-        ;
-//        imageViewTwo.animate().alpha(0).setDuration(2000);
+//        ImageView imageViewTwo = (ImageView) findViewById(R.id.imageView3);
 
 
-
-//        imageViewOne.animate().alpha(1).setDuration(2000);
+//        imageViewOne.animate().translationYBy (1000).alpha(0).setDuration(1000);
+//        imageViewTwo.animate().translationXBy(800).alpha(0). setDuration(1000);
+//        imageViewTwo.animate().rotation(1800).alpha(0).setDuration(2000);
+        imageViewOne.setX(-1000);
+        imageViewOne.animate().translationXBy(1000).rotation(3600).setDuration(2000);
 
 
     }

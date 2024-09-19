@@ -1,0 +1,2 @@
+### ImageView imageView = (ImageView) findViewById(R.id.imageView2);
+- In Java, findViewById() returns a general View object, and since ImageView is a subclass of View, you are casting the returned View to ImageView. This is a form of downcasting because you are converting a reference of a parent class (View) to a child class (ImageView).
